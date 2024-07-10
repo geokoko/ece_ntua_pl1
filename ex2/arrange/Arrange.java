@@ -1,19 +1,18 @@
-package ex2.arrange;
-
 import java.util.*;
 import java.io.*;
 
-class TreeNode {
-    long val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(long x) { 
-        val = x; 
-        left = right = null;
-    }
-}
-
 public class Arrange {
+    
+    static class TreeNode {
+        long val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(long x) { 
+            val = x; 
+            left = right = null;
+        }
+    }
+
     public static TreeNode mkTree(Scanner sc) {
         if (!sc.hasNextLong()) return null;
         long val = sc.nextLong();
@@ -70,7 +69,6 @@ public class Arrange {
             System.out.print(root.val + " ");
             first[0] = false;
         }
-
         else {
             System.out.print(root.val + " ");
         }
