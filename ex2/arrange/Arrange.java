@@ -3,6 +3,15 @@ package ex2.arrange;
 import java.util.*;
 import java.io.*;
 
+class TreeNode {
+    long val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(long x) { 
+        val = x; 
+        left = right = null;
+    }
+}
 
 public class Arrange {
     public static TreeNode mkTree(Scanner sc) {
