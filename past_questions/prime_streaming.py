@@ -22,4 +22,18 @@ class Primes:
             if Primes.is_prime(c2):
                 yield c2
             n += 1
+
+    # Adding print_primes method to print the first N prime numbers here:
+    def print_primes(N, M):
+        count = 1
+        for prime in Primes.stream():
+            if count >= N and count <= M:
+                print(prime)
+            count += 1
+            if count > M:
+                break
+
+Primes.print_primes(1, 9)
+
+
             
